@@ -1,0 +1,21 @@
+.text-white{
+	margin-top: 100px;
+	color: #F4F7F9;
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.text-white p{
+	font-size: 14px;
+}
+
+img{
+		width: 300px;
+		height: 456px;
+	}
+
+@media only screen and (max-width: 720px) {
+	img{
+		width: 250px;
+		height: 380px;
+	}
+}
