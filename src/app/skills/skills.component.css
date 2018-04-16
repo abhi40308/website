@@ -45,8 +45,8 @@
 {
 /*   z-index:99; */
   position:absolute;
-  padding:30px;
-  height:calc(100% - 60px);
+  padding-left:30px;
+  /*height:calc(100% - 60px);*/
 }
 
 .tile h2
