@@ -28,3 +28,8 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+* Run
+`ng build --env=prod --base-href "https://abhi40308.github.io/angular-portfolio/"`
+`sudo angular-cli-ghpages`
+to uplode current state of master.
