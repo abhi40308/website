@@ -1,6 +1,13 @@
+.card-container{
+  /* border: 0.5px solid grey; */
+  /* box-shadow: 1px 1px 0.5px grey; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 p.card-text {
 	text-align: center;
-	font-size: 13px;
+  font-size: 13px;
+  color: rgb(235, 229, 229);
 }
 
 
@@ -54,6 +61,13 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+}
+
+.tags{
+  color: rgba(58, 54, 54, 0.973);
+  background: rgba(97, 235, 17, 0.712);
+  border-radius: 15%;
+  padding: 0px 2px 0px 2px;
 }
 
 p {
