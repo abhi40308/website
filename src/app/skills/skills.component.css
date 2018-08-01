@@ -13,8 +13,8 @@
 
 .tile
 {
-  width:380px;
-  height:380px;
+  width:340px;
+  height:340px;
   margin:10px;
   background-color:silver;
   display:inline-block;
@@ -26,7 +26,7 @@
   overflow:hidden;
   color:white;
   font-family:'Roboto';
-  
+
 }
 .tile img
 {
@@ -111,7 +111,7 @@
   overflow:hidden;
   color:white;
   font-family:'Roboto';
-  
+
 }
 
 .animate-text

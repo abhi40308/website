@@ -5,7 +5,7 @@
 	}
 
 	a.contact-btn.active {
-		color: #F98349 !important;
+		color: rgb(112, 200, 241) !important;
 	}
 
 	a.navbar-brand.active {
@@ -13,11 +13,11 @@
 	}
 
 	a.skills-btn.active {
-		color: #71A0F7		!important;
+		color: rgb(112, 200, 241)		!important;
 	}
 
 	a.project-btn.active {
-		color: #6FC43E		!important;
+		color: rgb(112, 200, 241)		!important;
 	}
 
 	a.navbar-brand:hover {
@@ -25,13 +25,13 @@
 	}
 
 	a.contact-btn:hover {
-		color: #F98349		!important;
+		color: rgb(112, 200, 241)		!important;
 	}
 
 	a.skills-btn:hover {
-		color: #71A0F7		!important;
+		color: rgb(112, 200, 241)		!important;
 	}
 
 	a.project-btn:hover {
-		color: #6FC43E		!important;
+		color: rgb(112, 200, 241)		!important;
 	}
