@@ -1,0 +1,139 @@
+.wrap
+{
+  margin:50px auto 0 auto;
+  width:100%;
+  display:flex;
+  align-items:space-around;
+  max-width:1200px;
+}
+
+.top{
+  margin-top: 25%;
+}
+
+.tile
+{
+  width:340px;
+  height:340px;
+  margin:10px;
+  background-color:silver;
+  display:inline-block;
+  background-size:cover;
+  position:relative;
+  cursor:pointer;
+  transition: all 0.4s ease-out;
+  box-shadow: 0px 35px 77px -17px rgba(0,0,0,0.44);
+  overflow:hidden;
+  color:white;
+  font-family:'Roboto';
+
+}
+.tile img
+{
+  height:100%;
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  z-index:0;
+  transition: all 0.4s ease-out;
+}
+
+
+
+.tile .text
+{
+/*   z-index:99; */
+  position:absolute;
+  padding-left:30px;
+  /*height:calc(100% - 60px);*/
+}
+
+.tile h2
+{
+  font-weight:100;
+  font-size: 17px;
+  margin:20px 0 0 0;
+  font-family: Lucida Sans Unicode;
+  transform: translateX(200px);
+}
+
+.tile p li
+{
+  font-weight:300;
+  font-size: 15px;
+  margin:20px 0 0 0;
+  line-height: 25px;
+/*   opacity:0; */
+  transform: translateX(-200px);
+  transition-delay: 0.2s;
+}
+
+
+.animate-text
+{
+  font-family: Lucida Sans Unicode;
+  font-size: 15px;
+  opacity:0;
+  transition: all 0.6s ease-in-out;
+}
+
+
+.tile:hover
+{
+/*   background-color:#99aeff; */
+  transform:scale(1.05);
+}
+
+.tile:hover img
+{
+  opacity: 0.2;
+}
+
+.tile:hover .animate-text
+{
+  transform:translateX(0);
+  opacity:1;
+}
+
+@media only screen and (max-width: 600px) {
+  .tile
+{
+  width:250px;
+  height:250px;
+  margin:10px;
+  background-color:silver;
+  display:inline-block;
+  background-size:cover;
+  position:relative;
+  cursor:pointer;
+  transition: all 0.4s ease-out;
+  overflow:hidden;
+  color:white;
+  font-family:'Roboto';
+
+}
+
+.animate-text
+{
+  font-family: Lucida Sans Unicode;
+  font-size: 10px;
+  opacity:0;
+  transition: all 0.6s ease-in-out;
+}
+}
+
+
+@media (max-width: 1000px) {
+  .wrap {
+   flex-direction: column;
+    width:400px;
+  }
+}
+
+
+@media screen and (min-width: 600px){
+	.top{
+  margin-top: 15%;
+}
+}

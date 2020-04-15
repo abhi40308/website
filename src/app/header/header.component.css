@@ -1,0 +1,37 @@
+	a{
+		transition: all 0.5s;
+		font-family: Lucida Sans Unicode;
+		font-size: 15px;
+	}
+
+	a.contact-btn.active {
+		color: rgb(112, 200, 241) !important;
+	}
+
+	a.navbar-brand.active {
+		color: white		!important;
+	}
+
+	a.skills-btn.active {
+		color: rgb(112, 200, 241)		!important;
+	}
+
+	a.project-btn.active {
+		color: rgb(112, 200, 241)		!important;
+	}
+
+	a.navbar-brand:hover {
+		color: white		!important;
+	}
+
+	a.contact-btn:hover {
+		color: rgb(112, 200, 241)		!important;
+	}
+
+	a.skills-btn:hover {
+		color: rgb(112, 200, 241)		!important;
+	}
+
+	a.project-btn:hover {
+		color: rgb(112, 200, 241)		!important;
+	}

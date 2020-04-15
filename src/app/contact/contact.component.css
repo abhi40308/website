@@ -1,0 +1,79 @@
+.margin{
+  margin-top: 100px;
+}
+
+p{
+	color: #F4F7F9;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.sketch {
+	margin: 0;
+	top: 0;
+	left: 0;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+p.bottom{
+		font-size: 15px;
+		color: white;
+	}
+
+#form-send ul li{
+	font-size: 13px;
+	color: white;
+}
+
+label{
+	color: grey;
+}
+
+p.text-muted{
+	font-size: 12px;
+
+}
+
+#form-send {
+	margin-top: 20%;
+	/*margin-left: 0;*/
+}
+
+@media screen and (min-width: 600px){
+#form-send {
+	margin-top: 10%;
+	/*margin-left: 0;*/
+}
+}
+
+
+
+a.font {
+	color: #F4F7F9;
+	font-size: 27px;
+  letter-spacing: 20px;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 760px){
+
+
+a.font {
+	color: #F4F7F9;
+	font-size: 35px;
+  letter-spacing: 30px;
+  text-decoration: none;
+}
+}
+
+
+a.font:hover {
+  color: rgba(56, 167, 241, 0.884);
+}
+
+
+p {
+	color: white;
+	font-size: 18px;
+}

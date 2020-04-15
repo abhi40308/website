@@ -1,0 +1,23 @@
+<div class="container">
+<nav class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" (click)="toggleState()">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <a routerLink="/home" (click)="toggleState()" routerLinkActive="active" class="navbar-brand act"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
+    </div>
+    
+    <div class="collapse navbar-collapse" [ngClass]="{ 'in' : isIn }">
+        <ul class="nav navbar-nav navbar-right">
+            <li><a class="project-btn" (click)="toggleState()" routerLink="/projects" routerLinkActive="active"><i class="fa fa-folder-open"></i>Projects</a></li>
+            <li><a class="skills-btn" (click)="toggleState()" routerLink="/skills" routerLinkActive="active"><i class="fa fa-cogs"></i>Skills</a></li>
+            <li><a class="contact-btn" (click)="toggleState()" routerLink="/contact" routerLinkActive="active"><i class="fa fa-phone"></i>Contact</a></li>
+        </ul>
+    </div>
+</div>
+</nav>
+</div>
