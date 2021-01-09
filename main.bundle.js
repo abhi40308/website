@@ -61,20 +61,10 @@ var AppRoutingModule = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routes; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__contact_contact_component__ = __webpack_require__("./src/app/contact/contact.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home_component__ = __webpack_require__("./src/app/home/home.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__projects_projects_component__ = __webpack_require__("./src/app/projects/projects.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__skills_skills_component__ = __webpack_require__("./src/app/skills/skills.component.ts");
-
-
-
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__home_home_component__ = __webpack_require__("./src/app/home/home.component.ts");
 
 var routes = [
-    { path: 'home', component: __WEBPACK_IMPORTED_MODULE_1__home_home_component__["a" /* HomeComponent */] },
-    { path: 'contact', component: __WEBPACK_IMPORTED_MODULE_0__contact_contact_component__["a" /* ContactComponent */] },
-    { path: '', redirectTo: '/home', pathMatch: 'full' },
-    { path: 'projects', component: __WEBPACK_IMPORTED_MODULE_2__projects_projects_component__["a" /* ProjectsComponent */] },
-    { path: 'skills', component: __WEBPACK_IMPORTED_MODULE_3__skills_skills_component__["a" /* SkillsComponent */] }
+    { path: "", component: __WEBPACK_IMPORTED_MODULE_0__home_home_component__["a" /* HomeComponent */] },
 ];
 
 
@@ -90,7 +80,7 @@ module.exports = ""
 /***/ "./src/app/app.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<app-header></app-header>\n\n<router-outlet></router-outlet>\n"
+module.exports = "<!-- <app-header></app-header> -->\n\n<router-outlet></router-outlet>\n"
 
 /***/ }),
 
@@ -185,14 +175,14 @@ var AppModule = /** @class */ (function () {
 /***/ "./src/app/contact/contact.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ".margin{\n  margin-top: 100px;\n}\n\np{\n\tcolor: #F4F7F9;\n  font-family: \"Lucida Sans Unicode\", \"Lucida Grande\", sans-serif;\n}\n\n.sketch {\n\tmargin: 0;\n\ttop: 0;\n\tleft: 0;\n\tposition: fixed;\n\twidth: 100%;\n\theight: 100%;\n}\n\np.bottom{\n\t\tfont-size: 15px;\n\t\tcolor: white;\n\t}\n\n#form-send ul li{\n\tfont-size: 13px;\n\tcolor: white;\n}\n\nlabel{\n\tcolor: grey;\n}\n\np.text-muted{\n\tfont-size: 12px;\n\n}\n\n#form-send {\n\tmargin-top: 20%;\n\t/*margin-left: 0;*/\n}\n\n@media screen and (min-width: 600px){\n#form-send {\n\tmargin-top: 10%;\n\t/*margin-left: 0;*/\n}\n}\n\na.font {\n\tcolor: #F4F7F9;\n\tfont-size: 27px;\n  letter-spacing: 20px;\n  text-decoration: none;\n}\n\n@media screen and (min-width: 760px){\n\n\na.font {\n\tcolor: #F4F7F9;\n\tfont-size: 35px;\n  letter-spacing: 30px;\n  text-decoration: none;\n}\n}\n\na.font:hover {\n  color: rgba(56, 167, 241, 0.884);\n}\n\np {\n\tcolor: white;\n\tfont-size: 18px;\n}\n"
+module.exports = ".margin{\n  margin-top: 50px;\n}\n\np{\n\tcolor: #F4F7F9;\n  font-family: \"Lucida Sans Unicode\", \"Lucida Grande\", sans-serif;\n}\n\n.sketch {\n\tmargin: 0;\n\ttop: 0;\n\tleft: 0;\n\tposition: fixed;\n\twidth: 100%;\n\theight: 100%;\n}\n\np.bottom{\n\t\tfont-size: 15px;\n\t\tcolor: white;\n\t}\n\n#form-send ul li{\n\tfont-size: 13px;\n\tcolor: white;\n}\n\nlabel{\n\tcolor: grey;\n}\n\np.text-muted{\n\tfont-size: 12px;\n\n}\n\n#form-send {\n\tmargin-top: 20%;\n\t/*margin-left: 0;*/\n}\n\n@media screen and (min-width: 600px){\n#form-send {\n\tmargin-top: 10%;\n\t/*margin-left: 0;*/\n}\n}\n\na.font {\n\tcolor: #F4F7F9;\n\tfont-size: 27px;\n  letter-spacing: 20px;\n  text-decoration: none;\n}\n\n@media screen and (min-width: 760px){\n\n\na.font {\n\tcolor: #F4F7F9;\n\tfont-size: 35px;\n  letter-spacing: 30px;\n  text-decoration: none;\n}\n}\n\na.font:hover {\n  color: rgba(56, 167, 241, 0.884);\n}\n\np {\n\tcolor: white;\n\tfont-size: 18px;\n}\n"
 
 /***/ }),
 
 /***/ "./src/app/contact/contact.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "\n\n\n\n<br>\n<br>\n<br>\n\n<div class=\"container margin\">\n  <div class=\"container\">\n  <div class=\"row\">\n\n    <p style=\"font-size: 15px;\">You can find me on:</p>\n\n    <a class=\"font\" href=\"https://www.linkedin.com/in/abhijeet-singh-khangarot-7a6792126/\" target=\"_blank\">\n      <i class=\"fa fa-linkedin-square\"></i>\n    </a>\n\n    <a class=\"font git\" href=\"https://github.com/abhi40308\" target=\"_blank\">\n      <i class=\"fa fa-github\"></i>\n    </a>\n\n    <a class=\"font q\" href=\"https://www.quora.com/profile/Abhijeet-Singh-676\" target=\"_blank\">\n      <i class=\"fa fa-quora\"></i>\n    </a>\n\n    <a class=\"font gp\" href=\"https://www.instagram.com/__a.b.h.i/\" target=\"_blank\">\n      <i class=\"fa fa-instagram\"></i>\n    </a>\n\n    <a class=\"font fb\" href=\"https://www.facebook.com/abhijeetsingh.khangarot\" target=\"_blank\">\n      <i class=\"fa fa-facebook-square\"></i>\n    </a>\n\n    <a class=\"font tw\" href=\"https://twitter.com/abhi40308\" target=\"_blank\">\n      <i class=\"fa fa-twitter\"></i>\n    </a>\n\n    <a class=\"font tw\" href=\"https://stackoverflow.com/users/7088648/jokerster?tab=profile\" target=\"_blank\">\n      <i class=\"fa fa-stack-overflow\"></i>\n    </a>\n\n    <a class=\"font tw\" href=\"https://www.codechef.com/users/abhijeet40308\" target=\"_blank\">\n      <i class=\"fa fa-code\"></i>\n    </a>\n\n\n  </div>\n\n  <br>\n  <br>\n  <br>\n  \n</div>\n</div>\n<!-- <script src=\"/assets/js/contact.js\"></script> -->\n"
+module.exports = "<div class=\"container margin\">\n  <div class=\"container\">\n    <div class=\"row\">\n\n      <!-- <p style=\"font-size: 15px;\">You can find me on:</p> -->\n\n      <a class=\"font\" href=\"https://www.linkedin.com/in/abhijeet-singh-khangarot-7a6792126/\" target=\"_blank\">\n        <i class=\"fa fa-linkedin-square\"></i>\n      </a>\n\n      <a class=\"font git\" href=\"https://github.com/abhi40308\" target=\"_blank\">\n        <i class=\"fa fa-github\"></i>\n      </a>\n\n      <a class=\"font tw\" href=\"https://twitter.com/abhi40308\" target=\"_blank\">\n        <i class=\"fa fa-twitter\"></i>\n      </a>\n\n      <!-- <a class=\"font q\" href=\"https://www.quora.com/profile/Abhijeet-Singh-676\" target=\"_blank\">\n        <i class=\"fa fa-quora\"></i>\n      </a> -->\n\n      <a class=\"font gp\" href=\"https://www.instagram.com/__a.b.h.i/\" target=\"_blank\">\n        <i class=\"fa fa-instagram\"></i>\n      </a>\n\n      <a class=\"font fb\" href=\"https://www.facebook.com/abhijeetsingh.khangarot\" target=\"_blank\">\n        <i class=\"fa fa-facebook-square\"></i>\n      </a>\n\n      <a class=\"font tw\" href=\"https://stackoverflow.com/users/7088648/jokerster?tab=profile\" target=\"_blank\">\n        <i class=\"fa fa-stack-overflow\"></i>\n      </a>\n\n      <a class=\"font q\" href=\"https://medium.com/@abhi40308\" target=\"_blank\">\n        <i class=\"fa fa-medium\"></i>\n      </a>\n\n      <a class=\"font tw\" href=\"https://www.codechef.com/users/abhijeet40308\" target=\"_blank\">\n        <i class=\"fa fa-code\"></i>\n      </a>\n\n\n    </div>\n\n    <br>\n    <br>\n    <br>\n\n  </div>\n</div>\n<!-- <script src=\"/assets/js/contact.js\"></script> -->"
 
 /***/ }),
 
@@ -291,14 +281,14 @@ var HeaderComponent = /** @class */ (function () {
 /***/ "./src/app/home/home.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ".text-white{\n  margin-top: 20%;\n  float: none;\n\tfont-family: \"Lucida Sans Unicode\", \"Lucida Grande\", sans-serif;\n}\n\n.text-white p{\n  font-size: 14px;\n  background-color: rgb(8, 26, 37);\n  opacity: 0.6;\n  padding: 5px 10px 5px 10px;\n}\n\nimg{\n\t\twidth: 150px;\n    height: 150px;\n    border-radius: 50%;\n\t}\n\n@media only screen and (max-width: 1200px) {\n\timg{\n    display:block;\n    margin-left: auto;\n    margin-right: auto;\n    width: 120px;\n    height: 120px;\n  }\n  .text-white p{\n    font-size: 13px;\n  }\n}\n"
+module.exports = ".text-white {\n  margin-top: 5%;\n  float: none;\n  font-family: \"Lucida Sans Unicode\", \"Lucida Grande\", sans-serif;\n}\n\n.text-white p {\n  font-size: 14px;\n  background-color: rgb(8, 26, 37);\n  opacity: 0.6;\n  padding: 5px 10px 5px 10px;\n}\n\nimg {\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  width: 200px;\n  height: auto;\n  border-radius: 50%;\n}\n\n@media only screen and (max-width: 1200px) {\n  img {\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n    width: 120px;\n    height: auto;\n  }\n  .text-white p {\n    font-size: 13px;\n  }\n}\n"
 
 /***/ }),
 
 /***/ "./src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container text-white\">\n  <div class=\"row\">\n    <div class=\"col-lg-2\">\n      <img style=\"border-radius: 50%;\" class=\"img-fluid\" src=\"./assets/images/1.jpg\">\n    </div>\n\n\n  <div class=\"col-lg-10\">\n    <p style=\"color: white;\">Hi 👋, there! Thanks for stopping by. I am Abhijeet, currently pursuing B.Tech in Computer Science 💻 from IIIT Kalyani, India.\n      <br> <br> I like to build stuff 🔨 and work with new technologies ⚡. I am also hugely interested in entrepreneurship 👨🏻‍💻, and the marketing 💼 side too.\n      <br> <br> Currently, most of my time goes in learning, working for companies, freelancing or building something of my own. I have worked with Trendskill and FOSSASIA in past.\n      <br>\n    </p>\n  </div>\n</div>\n</div>\n"
+module.exports = "<div class=\"container text-white\">\n  <div class=\"row\">\n    <img style=\"border-radius: 50%;\" class=\"img-fluid\" src=\"./assets/images/3.jpeg\">\n  </div>\n\n  <div class=\"row\">\n    <p style=\"color: white;\">\n      <br><br>\n      Hi 👋 I am Abhijeet, currently working as a software engineer at Hasura\n      <br> <br> I care about tech ⚡ in general, the pressing problems of the world 🌎, and about the impact and\n      meaning of my work 🔨\n      <br> <br> I have previously worked with some open source organisations 👨🏻‍💻, built a few startups 💼,\n      participated in (and won) some hackathons, and had other internships and jobs, and some freelancing experience.\n      <br> <br> Did a bachelors degree in engineering (Computer Science) 💻 from IIIT Kalyani, India (cost me some\n      money so worth mentioning). Had a great time there, used to love competitive programming, FPS games and playing\n      TT🏓 and guitar.\n      <app-contact></app-contact>\n    </p>\n\n  </div>\n</div>"
 
 /***/ }),
 
