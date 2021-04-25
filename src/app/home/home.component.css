@@ -6,8 +6,8 @@
 
 .text-white p {
   font-size: 14px;
-  background-color: rgb(8, 26, 37);
-  opacity: 0.6;
+  background-color: rgb(8, 25, 36);
+  opacity: 0.9;
   padding: 5px 10px 5px 10px;
 }
 
@@ -31,4 +31,8 @@ img {
   .text-white p {
     font-size: 13px;
   }
+}
+
+.blog-btn {
+  color: white;
 }
