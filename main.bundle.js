@@ -61,10 +61,18 @@ var AppRoutingModule = /** @class */ (function () {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routes; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__home_home_component__ = __webpack_require__("./src/app/home/home.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__blogpost_blogpost_component__ = __webpack_require__("./src/app/blogpost/blogpost.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home_component__ = __webpack_require__("./src/app/home/home.component.ts");
+
 
 var routes = [
-    { path: "", component: __WEBPACK_IMPORTED_MODULE_0__home_home_component__["a" /* HomeComponent */] },
+    { path: "", component: __WEBPACK_IMPORTED_MODULE_1__home_home_component__["a" /* HomeComponent */] },
+    // { path: 'home', component: HomeComponent },
+    // { path: 'contact', component: ContactComponent },
+    // { path: "projects", component: ProjectsComponent },
+    // { path: "skills", component: SkillsComponent },
+    { path: "blog", component: __WEBPACK_IMPORTED_MODULE_0__blogpost_blogpost_component__["a" /* BlogpostComponent */] },
+    { path: "", redirectTo: "/home", pathMatch: "full" },
 ];
 
 
@@ -129,12 +137,14 @@ var AppComponent = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__projects_projects_component__ = __webpack_require__("./src/app/projects/projects.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__contact_contact_component__ = __webpack_require__("./src/app/contact/contact.component.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__skills_skills_component__ = __webpack_require__("./src/app/skills/skills.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__blogpost_blogpost_component__ = __webpack_require__("./src/app/blogpost/blogpost.component.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
 
 
 
@@ -155,7 +165,8 @@ var AppModule = /** @class */ (function () {
                 __WEBPACK_IMPORTED_MODULE_5__header_header_component__["a" /* HeaderComponent */],
                 __WEBPACK_IMPORTED_MODULE_6__projects_projects_component__["a" /* ProjectsComponent */],
                 __WEBPACK_IMPORTED_MODULE_7__contact_contact_component__["a" /* ContactComponent */],
-                __WEBPACK_IMPORTED_MODULE_8__skills_skills_component__["a" /* SkillsComponent */]
+                __WEBPACK_IMPORTED_MODULE_8__skills_skills_component__["a" /* SkillsComponent */],
+                __WEBPACK_IMPORTED_MODULE_9__blogpost_blogpost_component__["a" /* BlogpostComponent */]
             ],
             imports: [
                 __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -172,6 +183,56 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/blogpost/blogpost.component.css":
+/***/ (function(module, exports) {
+
+module.exports = ".text-white {\n    margin-top: 5%;\n    float: none;\n    font-family: \"Lucida Sans Unicode\", \"Lucida Grande\", sans-serif;\n  }\n  \n  .text-white p {\n    font-size: 14px;\n    background-color: rgb(8, 25, 36);\n    opacity: 0.9;\n    padding: 5px 10px 5px 10px;\n  }\n  \n  img {\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n    width: 200px;\n    height: auto;\n    border-radius: 50%;\n  }\n  \n  @media only screen and (max-width: 1200px) {\n    img {\n      display: block;\n      margin-left: auto;\n      margin-right: auto;\n      width: 120px;\n      height: auto;\n    }\n    .text-white p {\n      font-size: 13px;\n    }\n  }\n  \n  .blog-btn {\n    color: white;\n  }\n  "
+
+/***/ }),
+
+/***/ "./src/app/blogpost/blogpost.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container text-white\">\n  <a class=\"blog-btn\" (click)=\"toggleState()\" routerLink=\"/\" routerLinkActive=\"active\"><i\n      class=\"fa fa-angle-double-left\"></i> Back</a>\n  <br>\n  <br>\n\n  <div class=\"row\">\n    <p style=\"color: white;\">\n      <br>\n      <a class=\"blog-btn\" href=\"https://hasura.io/blog/handling-graphql-hasura-errors-with-react/\">\n        Handling GraphQL Errors with Hasura & React\n      </a>\n      <br>\n      <br>\n      <a class=\"blog-btn\" href=\"https://hasura.io/blog/instagram-clone-react-graphql-hasura-part1/\">Building an\n        Instagram clone in React with GraphQL and Hasura - Part I</a>\n      <br>\n      <br>\n      <a class=\"blog-btn\" href=\"https://hasura.io/blog/instagram-clone-react-graphql-hasura-part2/\">Building an\n        Instagram clone in React with GraphQL and Hasura - Part 2</a>\n      <br>\n      <br>\n      <a class=\"blog-btn\" href=\"https://hasura.io/blog/hackernews-tutorial-using-graphql-react-hasura-part1/\">Building a\n        Hacker News Clone with GraphQL, Hasura and React - Part 1</a>\n      <br>\n      <br>\n      <a class=\"blog-btn\" href=\"https://hasura.io/blog/hackernews-tutorial-using-graphql-react-hasura-part2/\">Building a\n        Hacker News Clone with GraphQL, Hasura and React - Part 2</a>\n      <br>\n      <br>\n      <a class=\"blog-btn\" href=\"https://medium.com/kuzok/brain-mri-segmentation-using-deep-learning-217eb1bb5e82\">Brain\n        MRI Segmentation using Deep Learning</a>\n      <br>\n      <br>\n      <a class=\"blog-btn\" href=\"https://medium.com/kuzok/hand-gesture-recognition-using-deep-learning-8435d11c548a\">Hand\n        Gesture Recognition using Deep Learning</a>\n      <br>\n      <br>\n      <a class=\"blog-btn\"\n        href=\"https://medium.com/kuzok/news-documents-clustering-using-python-latent-semantic-analysis-b95c7b68861c\">News\n        documents clustering using python (latent semantic analysis)</a>\n      <br>\n      <br>\n      <a class=\"blog-btn\" href=\"https://medium.com/@abhi_khangarot/what-the-heck-is-haskell-9176ee499922\">What the heck\n        is haskell</a>\n      <br>\n      <br>\n    </p>\n  </div>\n</div>"
+
+/***/ }),
+
+/***/ "./src/app/blogpost/blogpost.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BlogpostComponent; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var BlogpostComponent = /** @class */ (function () {
+    function BlogpostComponent() {
+    }
+    BlogpostComponent.prototype.ngOnInit = function () {
+    };
+    BlogpostComponent = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
+            selector: 'app-blogpost',
+            template: __webpack_require__("./src/app/blogpost/blogpost.component.html"),
+            styles: [__webpack_require__("./src/app/blogpost/blogpost.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], BlogpostComponent);
+    return BlogpostComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/contact/contact.component.css":
 /***/ (function(module, exports) {
 
@@ -182,7 +243,7 @@ module.exports = ".margin{\n  margin-top: 50px;\n}\n\np{\n\tcolor: #F4F7F9;\n  f
 /***/ "./src/app/contact/contact.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container margin\">\n  <div class=\"container\">\n    <div class=\"row\">\n\n      <!-- <p style=\"font-size: 15px;\">You can find me on:</p> -->\n\n      <a class=\"font\" href=\"https://www.linkedin.com/in/abhijeet-singh-khangarot-7a6792126/\" target=\"_blank\">\n        <i class=\"fa fa-linkedin-square\"></i>\n      </a>\n\n      <a class=\"font git\" href=\"https://github.com/abhi40308\" target=\"_blank\">\n        <i class=\"fa fa-github\"></i>\n      </a>\n\n      <a class=\"font tw\" href=\"https://twitter.com/abhi40308\" target=\"_blank\">\n        <i class=\"fa fa-twitter\"></i>\n      </a>\n\n      <!-- <a class=\"font q\" href=\"https://www.quora.com/profile/Abhijeet-Singh-676\" target=\"_blank\">\n        <i class=\"fa fa-quora\"></i>\n      </a> -->\n\n      <a class=\"font gp\" href=\"https://www.instagram.com/__a.b.h.i/\" target=\"_blank\">\n        <i class=\"fa fa-instagram\"></i>\n      </a>\n\n      <a class=\"font fb\" href=\"https://www.facebook.com/abhijeetsingh.khangarot\" target=\"_blank\">\n        <i class=\"fa fa-facebook-square\"></i>\n      </a>\n\n      <a class=\"font tw\" href=\"https://stackoverflow.com/users/7088648/jokerster?tab=profile\" target=\"_blank\">\n        <i class=\"fa fa-stack-overflow\"></i>\n      </a>\n\n      <a class=\"font q\" href=\"https://medium.com/@abhi40308\" target=\"_blank\">\n        <i class=\"fa fa-medium\"></i>\n      </a>\n\n      <a class=\"font tw\" href=\"https://www.codechef.com/users/abhijeet40308\" target=\"_blank\">\n        <i class=\"fa fa-code\"></i>\n      </a>\n\n\n    </div>\n\n    <br>\n    <br>\n    <br>\n\n  </div>\n</div>\n<!-- <script src=\"/assets/js/contact.js\"></script> -->"
+module.exports = "<div class=\"container margin\">\n  <div class=\"container\">\n    <div class=\"row\">\n\n      <!-- <p style=\"font-size: 15px;\">You can find me on:</p> -->\n\n      <a class=\"font\" href=\"https://www.linkedin.com/in/abhijeetkhangarot/\" target=\"_blank\">\n        <i class=\"fa fa-linkedin-square\"></i>\n      </a>\n\n      <a class=\"font git\" href=\"https://github.com/abhi40308\" target=\"_blank\">\n        <i class=\"fa fa-github\"></i>\n      </a>\n\n      <a class=\"font tw\" href=\"https://twitter.com/abhi_khangarot\" target=\"_blank\">\n        <i class=\"fa fa-twitter\"></i>\n      </a>\n\n      <!-- <a class=\"font q\" href=\"https://www.quora.com/profile/Abhijeet-Singh-676\" target=\"_blank\">\n        <i class=\"fa fa-quora\"></i>\n      </a> -->\n\n      <a class=\"font tw\" href=\"https://stackoverflow.com/users/7088648/abhijeet-singh?tab=profile\" target=\"_blank\">\n        <i class=\"fa fa-stack-overflow\"></i>\n      </a>\n\n      <a class=\"font q\" href=\"https://medium.com/@abhi_khangarot\" target=\"_blank\">\n        <i class=\"fa fa-medium\"></i>\n      </a>\n\n      <a class=\"font gp\" href=\"https://www.instagram.com/__a.b.h.i/\" target=\"_blank\">\n        <i class=\"fa fa-instagram\"></i>\n      </a>\n\n      <a class=\"font fb\" href=\"https://www.facebook.com/abhijeetsingh.khangarot\" target=\"_blank\">\n        <i class=\"fa fa-facebook-square\"></i>\n      </a>\n\n      <!-- <a class=\"font tw\" href=\"https://www.codechef.com/users/abhijeet40308\" target=\"_blank\">\n        <i class=\"fa fa-code\"></i>\n      </a> -->\n\n\n    </div>\n\n    <br>\n    <br>\n    <br>\n\n  </div>\n</div>\n<!-- <script src=\"/assets/js/contact.js\"></script> -->"
 
 /***/ }),
 
@@ -281,14 +342,14 @@ var HeaderComponent = /** @class */ (function () {
 /***/ "./src/app/home/home.component.css":
 /***/ (function(module, exports) {
 
-module.exports = ".text-white {\n  margin-top: 5%;\n  float: none;\n  font-family: \"Lucida Sans Unicode\", \"Lucida Grande\", sans-serif;\n}\n\n.text-white p {\n  font-size: 14px;\n  background-color: rgb(8, 26, 37);\n  opacity: 0.6;\n  padding: 5px 10px 5px 10px;\n}\n\nimg {\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  width: 200px;\n  height: auto;\n  border-radius: 50%;\n}\n\n@media only screen and (max-width: 1200px) {\n  img {\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n    width: 120px;\n    height: auto;\n  }\n  .text-white p {\n    font-size: 13px;\n  }\n}\n"
+module.exports = ".text-white {\n  margin-top: 5%;\n  float: none;\n  font-family: \"Lucida Sans Unicode\", \"Lucida Grande\", sans-serif;\n}\n\n.text-white p {\n  font-size: 14px;\n  background-color: rgb(8, 25, 36);\n  opacity: 0.9;\n  padding: 5px 10px 5px 10px;\n}\n\nimg {\n  display: block;\n  margin-left: auto;\n  margin-right: auto;\n  width: 200px;\n  height: auto;\n  border-radius: 50%;\n}\n\n@media only screen and (max-width: 1200px) {\n  img {\n    display: block;\n    margin-left: auto;\n    margin-right: auto;\n    width: 120px;\n    height: auto;\n  }\n  .text-white p {\n    font-size: 13px;\n  }\n}\n\n.blog-btn {\n  color: white;\n}\n"
 
 /***/ }),
 
 /***/ "./src/app/home/home.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container text-white\">\n  <div class=\"row\">\n    <img style=\"border-radius: 50%;\" class=\"img-fluid\" src=\"./assets/images/3.jpeg\">\n  </div>\n\n  <div class=\"row\">\n    <p style=\"color: white;\">\n      <br><br>\n      Hi 👋 I am Abhijeet, currently working as a software engineer at Hasura\n      <br> <br> I care about tech ⚡ in general, the pressing problems of the world 🌎, and about the impact and\n      meaning of my work 🔨\n      <br> <br> I have previously worked with some open source organisations 👨🏻‍💻, built a few startups 💼,\n      participated in (and won) some hackathons, and had other internships and jobs, and some freelancing experience.\n      <br> <br> Did a bachelors degree in engineering (Computer Science) 💻 from IIIT Kalyani, India (cost me some\n      money so worth mentioning). Had a great time there, used to love competitive programming, FPS games and playing\n      TT🏓 and guitar.\n      <app-contact></app-contact>\n    </p>\n\n  </div>\n</div>"
+module.exports = "<div class=\"container text-white\">\n  <div class=\"row\">\n    <img style=\"border-radius: 50%;\" class=\"img-fluid\" src=\"./assets/images/3.jpeg\">\n  </div>\n\n  <div class=\"row\">\n    <p style=\"color: white;\">\n      <br><br>\n      Hi 👋 I am Abhijeet, currently working as a software engineer at Hasura.\n      <br> <br> I care about tech ⚡, pressing problems of the world 🌎, and the impact and\n      meaning of my work 🔨\n      <br> <br> I have previously worked with a few open source organisations 👨🏻‍💻 (mainly Mifos and FOSSASIA), built\n      a few projects/startups 💼,\n      participated in (and won) some hackathons, and had other internships and jobs, and some freelancing experience.\n      <br> <br> Completed my bachelors degree in engineering (Computer Science) 💻 from IIIT Kalyani, India.\n      Had a great time there, used to love competitive programming, FPS games and playing\n      TT🏓 and guitar.\n      <br>\n      <br>\n      <a class=\"blog-btn\" (click)=\"toggleState()\" routerLink=\"/blog\" routerLinkActive=\"active\">Blog</a> |\n      <a class=\"blog-btn\" (click)=\"toggleState()\" routerLink=\"/\" routerLinkActive=\"active\">Resume</a>\n      <app-contact></app-contact>\n    </p>\n\n  </div>\n</div>"
 
 /***/ }),
 
