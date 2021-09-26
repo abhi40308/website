@@ -1,29 +1,32 @@
 <div class="container text-white">
   <div class="row">
-    <img style="border-radius: 5%;" class="img-fluid" src="./assets/images/3.jpeg">
+    <img style="border-radius: 5%" class="img-fluid" src="./assets/images/3.jpeg" />
   </div>
 
-  <div class="row">
-    <p style="color: white;">
-      <br><br>
-      Hi 👋 I am Abhijeet, currently working as a software engineer at Hasura.
-      <br> <br> I care about tech ⚡, pressing problems of the world 🌎, and the impact and
-      meaning of my work 🔨
-      <br> <br> I have previously worked with a few open-source organisations 👨🏻‍💻 (mainly Mifos and FOSSASIA), built
-      a few projects/startups 💼,
-      participated in (and won) some hackathons, and had other internships and jobs, and some freelancing experience.
-      <br> <br> I have worked in web-dev (mainly in Javascript/Typescript including React-Redux, REST and GraphQL API's,
-      Angular and python-based Django), machine learning/deep learning, and general algorithmic projects. I like to focus
-      on problem-solving 💡 and am always super excited to learn new tech/tools.
-      <br> <br> Completed my bachelor's degree in engineering (Computer Science) 💻 from IIIT Kalyani, India.
-      Had a great time there, used to love competitive programming, FPS games, and playing
-      TT🏓 and guitar.
-      <br>
-      <br>
-      <a class="blog-btn" (click)="toggleState()" routerLink="/blog" routerLinkActive="active">Blog</a> |
-      <a class="blog-btn" (click)="toggleState()" routerLink="/" routerLinkActive="active">Resume</a>
+  <div class="row main-text">
+    <div class="container-padding">
+      <p class="sub-text">
+        Hi 👋 I am Abhijeet, currently working as a software engineer at Hasura.
+      </p>
+      <br />
+      <p class="sub-text">
+        I care about tech ⚡, pressing problems of the world 🌎, and the impact
+        and meaning of my work. I'm a startup enthusiast. I love contributing to
+        awesome open source projects, and doing product design and development.
+      </p>
+        
+      <br />
+      <p class="sub-text">
+        I have worked in web-dev, mainly in Javascript/Typescript frontend
+        (React-Redux, Angular) and python-based backend (Django). I'm also
+        interested in machine learning projects, and algorithmic programming.
+      </p>
+      <br />
+      <a class="blog-btn" routerLink="/blog" routerLinkActive="active">Blog</a>
+      |
+      <a class="blog-btn" routerLink="/projects" routerLinkActive="active">Projects</a>
+      <!-- <a class="blog-btn" href="../../assets/pdf/abhijeet.pdf" target="_self" download>Resume</a> -->
       <app-contact></app-contact>
-    </p>
-
+    </div>
   </div>
 </div>

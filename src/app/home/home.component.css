@@ -4,7 +4,7 @@
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-.text-white p {
+.text-white .main-text {
   font-size: 14px;
   background-color: rgb(8, 25, 36);
   opacity: 0.9;
@@ -36,4 +36,23 @@ img {
 
 .blog-btn {
   color: white;
+}
+
+.main-text {
+  color: white;
+}
+
+.sub-text {
+  margin-bottom: 2px;
+  line-height: 1.8;
+}
+
+.container-padding {
+  padding: 20px 30px 20px 10px;
+}
+
+@media screen and (min-width: 760px) {
+  .container-padding {
+    padding: 40px 120px 40px 20px;
+  }
 }

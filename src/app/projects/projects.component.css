@@ -1,75 +1,63 @@
-.card-container{
-  /* border: 0.5px solid grey; */
-  /* box-shadow: 1px 1px 0.5px grey; */
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.text-white {
+  margin-top: 5%;
+  float: none;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-p.card-text {
-	text-align: center;
-  font-size: 13px;
-  color: rgb(235, 229, 229);
-}
-
-
-a.font {
-	font-size: 50px;
-	color: black;
-}
-
-a.font:hover {
-	color: green;
-}
-
-[class*="col-"] {
-      margin-bottom: 15px;
-  }
-
-.image-contain{
-	width: 100%;
-	height: 100%;
+.text-white .main-text {
+  font-size: 14px;
+  background-color: rgb(8, 25, 36);
+  opacity: 0.9;
+  padding: 5px 10px 5px 10px;
 }
 
 img {
-	display: block;
-	width: 100%;
-	height: auto;
+  display: block;
+  /* margin-left: auto;
+  margin-right: auto; */
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 5px;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: silver;
+@media only screen and (max-width: 1200px) {
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 120px;
+    height: auto;
+  }
+  .text-white p {
+    font-size: 13px;
+  }
 }
 
-
-.image-contain:hover .overlay{
-  opacity: 0.6;
+.blog-btn {
+  color: white;
 }
 
-.text {
-  color: black;
-  font-size: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
+.main-text {
+  color: white;
 }
 
-.tags{
-  color: rgba(58, 54, 54, 0.973);
-  background: rgba(15, 141, 214, 0.712);
-  border-radius: 15%;
-  padding: 0px 2px 0px 2px;
+.sub-text {
+  margin-bottom: 2px;
+  line-height: 1.8;
 }
 
-p {
-	color: white;
+.container-padding {
+  padding: 20px 30px 20px 10px;
+}
+
+@media screen and (min-width: 760px) {
+  .container-padding {
+    padding: 40px 120px 40px 20px;
+  }
+}
+
+.note-text {
+  font-size: 12px;
+  
 }
